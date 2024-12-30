@@ -21,8 +21,8 @@ tailwind.config = {
   
       extend:{
         colors:{
-          primary:"#000000"
-
+          primary:"#000000",
+          rating:"#FFC633"
         }
       }
     }
