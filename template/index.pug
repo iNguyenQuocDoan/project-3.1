@@ -1,5 +1,6 @@
 include ../mixins/product.pug
 include ../mixins/banner.pug
+include ../mixins/feedback.pug
 
 doctype html
 html
@@ -106,7 +107,7 @@ html
         - 
             var productListNew = [
                 {
-                    image:"../assets/images/produduct-1.png",
+                    image:"../assets/images/product-1.png",
                     title:"Áo Thun Nam Đơn Giản",
                     link:"#",
                     star:"4",
@@ -115,7 +116,7 @@ html
                 },
 
                 {
-                    image:"../assets/images/produduct-1.png",
+                    image:"../assets/images/product-1.png",
                     title:"Cách",
                     link:"#",
                     star:"3",
@@ -126,7 +127,7 @@ html
                 },
 
                     {
-                    image:"../assets/images/produduct-1.png",
+                    image:"../assets/images/product-1.png",
                     title:"Áo Sơ Mi CaroCaro",
                     link:"#",
                     star:"4",
@@ -135,7 +136,7 @@ html
                 },
 
                     {
-                    image:"../assets/images/produduct-1.png",
+                    image:"../assets/images/product-1.png",
                     title:"Cách",
                     link:"#",
                     star:"0",
@@ -206,10 +207,76 @@ html
         div(class="sm:pb-[86px] pb-[40px]")
             div(class="container mx-auto px-[16px] ")
                 div(class="bg-[#F0F0F0] sm:rounded-[40px] rounded-[20px] sm:py-[70px] py-[28px] sm:px-[64px] px-[24px]")
-                    h2(class="text-center font-[700] sm:text-[48px] text-[32px] text-primary sm:mt-[60px] mb-[16px]") DANH MỤC NỔI BẬT
+                    h2(class="text-center font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[60px] mb-[16px]") DANH MỤC NỔI BẬT
 
                     div(class="grid lg:grid-cols-3 grid-col-1 sm:gap-[20px] gap-[16px]")
                         each item, index in bannerList
                             +banner-item(item, index)
                         
         //- section 5
+
+
+        //- section 6
+
+        -
+            var feedbackList =[
+                {
+                    star:5,
+                    nameCus :"Le Van A",
+                    commentCus : "Tôi rất ngạc nhiên trước chất lượng và kiểu dáng của những bộ quần áo từ 28.SHOP. Từ trang phục thường ngày đến trang phục thanh lịch, mọi món đồ tôi mua đều vượt quá sự mong đợi của tôi."
+                },
+
+                {
+                    star:5,
+                    nameCus :"Le Van B",
+                    commentCus : "Việc tìm kiếm quần áo phù hợp với phong cách cá nhân của tôi từng là một thử thách cho đến khi tôi khám phá ra 28.SHOP. Hàng loạt lựa chọn mà họ cung cấp thực sự đáng chú ý."
+                },
+
+                 {
+                    star:5,
+                    nameCus :"Le Van C",
+                    commentCus : "Là một người luôn tìm kiếm những món đồ thời trang độc đáo, tôi rất vui khi tình cờ biết đến 28.SHOP. Việc lựa chọn quần áo không chỉ đa dạng mà còn bắt kịp xu hướng mới nhất."
+                },
+                   
+            ];
+        div(class="sm:pb-[80px] pd-[60px]")
+             div(class="container mx-auto px-[16px]")
+                h2(class="font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[60px] mb-[32px]")  CẢM NHẬN CỦA KHÁCH HÀNG
+                div(class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]")
+                    //- each item in feedbackList
+                    //-     +customer-feedback(item)
+
+                    div(class="border border-[#0000001A] rounded-[20px] sm:py-[28px] py-[24px] sm:px-[32px] px-[24px]")
+                        div(class="flex sm:gap-[6px] gap-[5px] sm:text-[22px] text-[19px] text-[#FFC633] sm:mb-[15px] mb-[12px] ") 
+                                //- - for (var i = 0; i < 5;i++)
+                                //-             if i < item.star
+                                //-                 <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        div(class=" flex items-center gap-[4px] mb-[12px] ")
+                                span(class="font-[700] sm:text-[20px] text-[16px] ") tenten
+                                <i class="fa-solid fa-circle-check sm:text-[19px]  text-[15px] text-[#01AB31]"></i>
+                        p(class="font-[400] sm:text-[16px] text-[14px] text-[#00000099]") test
+                                        
+                    
+
+
+
+
+        //- section 6
+
+        //- section 7
+        div(class="")
+            div(class="container mx-auto px-[16px]")
+                div(class="bg-primary rounded-[20px] py-[36px] px-[64px]")
+                    h2(class="w-[551px] text-white text-[40px] font-[700]") CẬP NHẬT VỀ ƯU ĐÃI MỚI NHẤT CỦA CHÚNG TÔI
+                    form(class="w-[349px] ")
+                        div(class="bg-white rounded-62px h-[48px] py-[12px] px-[16px] flex items-center gap-[13px]")
+                            <i class="fa-solid fa-envelope "></i>
+                            input(type="email" placeholder="Nhập email của bạn..." class="")
+                        button(class="") Đăng kí nhận tin
+
+        //- section 7
