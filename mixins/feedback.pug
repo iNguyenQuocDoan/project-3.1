@@ -1,12 +1,14 @@
 mixin customer-feedback(item)
-
-      div(class="border border-[#0000001A] rounded-[20px] sm:py-[28px] py-[24px] sm:px-[32px] px-[24px]")
-      div(class="flex sm:gap-[6px] gap-[5px] sm:text-[22px] text-[19px] text-[#FFC633] sm:mb-[15px] mb-[12px] ") 
-            - for (var i = 0; i < 5;i++)
-                  if i < item.star
-                        <i class="fa-solid fa-star"></i>
-                  
-      div(class=" flex items-center gap-[4px] mb-[12px] ")
-            span(class="font-[700] sm:text-[20px] text-[16px] ") #{item.nameCus}
-            <i class="fa-solid fa-circle-check sm:text-[19px]  text-[15px] text-[#01AB31]"></i>
-      p(class="font-[400] sm:text-[16px] text-[14px] text-[#00000099]") #{item.commentCus}
+      div(class="border border-[#0000001A] rounded-[20px] sm:py-[28px] sm:px-[32px] p-[24px]")
+            div(class="flex sm:gap-[6px] gap-[5px] sm:text-[22px] text-[19px] text-[#FFC633] sm:mb-[15px] mb-[12px]")
+                  - for(var i = 0; i < item.star; i++)
+                         <i class="fa-solid fa-star"></i>
+                  //- <i class="fa-solid fa-star"></i>
+                  //- <i class="fa-solid fa-star"></i>
+                  //- <i class="fa-solid fa-star"></i>
+                  //- <i class="fa-solid fa-star"></i>
+                  //- <i class="fa-solid fa-star"></i>
+            div(class="mb-[12px] flex items-center gap-[4px]")
+                  span(class="font-[700] sm:text-[20px] text-[16px] text-black") #{item.name}
+                  <i class="fa-solid fa-circle-check sm:text-[19px] text-[15px] text-[#01AB31]"></i>
+            p(class="font-[400] sm:text-[16px] text-[14px] text-[#00000099]") #{item.feel}
