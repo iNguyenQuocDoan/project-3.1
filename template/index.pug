@@ -9,10 +9,14 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Trang chủ
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
-    link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css")
+    link(rel="stylesheet" href="assets/css/style.css")
     script(src="https://cdn.tailwindcss.com")
     script(src="tailwind.config.js")
-  
+
+
   body
     //- Top Header
     div(class="bg-primary sm:py-[10px] py-[9px]")
@@ -50,23 +54,23 @@ html
     //- End Header
 
     //- Section 1
-    div(class="bg-[#F2F0F1]")
-      div(class="container mx-auto px-[16px]")
+    div(class="bg-[#F2F0F1] truncate")
+      div(class="container mx-auto px-[16px] whitespace-normal")
         div(class="flex flex-wrap items-center")
           div(class="lg:w-[47.6%] w-[100%] lg:mt-[0] mt-[40px]")
-            h1(class="font-[900] xl:text-[48px] sm:text-[32px] text-[28px] text-primary mb-[10px]") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
-            p(class="font-[400] xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
-            a(href="#" class="sm:inline-block block text-center bg-primary rounded-[62px] py-[16px] px-[64px] font-[500] text-[16px] text-white") Xem Ngay
+            h1(class="font-[900] xl:text-[48px] sm:text-[32px] text-[28px] text-primary mb-[10px]" data-aos="fade-up" data-aos-duration="800") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
+            p(class="font-[400] xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
+            a(href="#" class="sm:inline-block block text-center bg-primary rounded-[62px] py-[16px] px-[64px] font-[500] text-[16px] text-white" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="300" ) Xem Ngay
             div(class="flex flex-wrap xl:mt-[50px] mt-[30px] sm:justify-start justify-center sm:text-left text-center sm:gap-[0] gap-x-[75px] gap-y-[10px]")
               div(class="sm:pr-[32px] sm:border-r border-[#0000001A] sm:mr-[32px]")
-                div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 200+
-                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") Thương Hiệu
+                div(class="font-[700] xl:text-[40px] text-[24px] text-primary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" ) 200+
+                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" ) Thương Hiệu
               div(class="sm:pr-[32px] sm:border-r border-[#0000001A] sm:mr-[32px]")
-                div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 2,000+
-                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") Sản Phẩm Chất Lượng
+                div(class="font-[700] xl:text-[40px] text-[24px] text-primary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750" ) 2,000+
+                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" ) Sản Phẩm Chất Lượng
               div(class="")
-                div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 30,000+
-                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") Khách Hàng
+                div(class="font-[700] xl:text-[40px] text-[24px] text-primary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1050" ) 30,000+
+                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300") Khách FHàng
           div(class="lg:ml-[60px] lg:flex-1 flex-none w-[100%] relative")
             img(src="assets/images/image-1.jpg" class="w-[100%] mt-[60px]")
             img(src="assets/images/section-1-icon.svg" class="w-[56px] absolute left-[0] top-[40%] sm:block hidden")
@@ -76,7 +80,7 @@ html
     //- Section 2
     div(class="bg-primary sm:py-[42px] py-[30px]")
       div(class="container mx-auto px-[16px]")
-        div(class="flex flex-wrap sm:gap-x-[60px] gap-x-[34px] gap-y-[28px] justify-center")
+        div(class="flex flex-wrap sm:gap-x-[60px] gap-x-[34px] gap-y-[28px] justify-center viewerSection2")
           img(src="assets/images/partner-1.png" alt="Partner 1" class="sm:h-[32px] h-[22px] w-auto")
           img(src="assets/images/partner-2.png" alt="Partner 2" class="sm:h-[32px] h-[22px] w-auto")
           img(src="assets/images/partner-3.png" alt="Partner 3" class="sm:h-[32px] h-[22px] w-auto")
@@ -118,26 +122,52 @@ html
           price: 180000,
           priceSpecial: 126000,
           discount: 30
-        }
+        },
+          {
+          image: "assets/images/product-2.jpg",
+          title: "Quần Jean Nam Phong Cách",
+          link: "#",
+          stars: 5,
+          price: 600000,
+          priceSpecial: 480000,
+          discount: 20
+        },
+          {
+          image: "assets/images/product-1.jpg",
+          title: "Áo Thun Nam Đơn Giản",
+          link: "#",
+          stars: 4,
+          price: 600000
+        },
+
       ];
 
     div(class="sm:py-[62px] py-[40px] border-b border-b-[#0000001A]")
       div(class="container mx-auto px-[16px]  ")
-        
+
         h2(class="text-center font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px]") THỜI TRANG MỚI
-        
+
         div(class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px]")
           each item in productListNew
             +product-item(item)
-        
-        div(class="text-center sm:mt-[40px] mt-[30px] ")
+
+
+        div(class="text-center sm:mt-[40px]  ")
           a(href="#" class="border border-[#0000001A] rounded-[62px] py-[16px] px-[63px] font-[500] sm:text-[16px] text-[14px] text-black inline-block sm:w-auto w-[100%]") Xem Tất Cả 
+
+        div(class=" mt-[40px] gap-x-[20px]  gap-y-[30px]  swiper swiperSection3")
+          div(class="swiper-wrapper")
+            each item in productListNew
+              div(class="swiper-slide")
+                +product-item(item)
+          div(class="swiper-button-next")
+          div(class="swiper-button-prev")
 
         div(class=" ")
     //- End Section 3
 
     //- Section 4
-    
+
     -
       var productListNew = [
         {
@@ -177,16 +207,16 @@ html
     div(class="sm:py-[62px] py-[40px]  ")
       div(class="container mx-auto px-[16px]")
         h2(class="text-center font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px]  ") GIẢM GIÁ NHIỀU
-        
+
         div(class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px]")
           each item in productListNew
             +product-item(item)
-        
+
         div(class="text-center sm:mt-[40px] mt-[30px]")
           a(href="#" class="border border-[#0000001A] rounded-[62px] py-[16px] px-[63px] font-[500] sm:text-[16px] text-[14px] text-black inline-block sm:w-auto w-[100%]") Xem Tất Cả 
 
-       
-    
+
+
     //- End Section 4
 
     //- Section 5
@@ -234,16 +264,16 @@ html
           feel: "Tôi rất ngạc nhiên trước chất lượng và kiểu dáng của những bộ quần áo từ 28.SHOP. Từ trang phục thường ngày đến trang phục thanh lịch, mọi món đồ tôi mua đều vượt quá sự mong đợi của tôi.",
 
         },
-         {
-          star:5,
-          name: "Le Van B",
-          feel: "Việc tìm kiếm quần áo phù hợp với phong cách cá nhân của tôi từng là một thử thách cho đến khi tôi khám phá ra 28.SHOP. Hàng loạt lựa chọn mà họ cung cấp thực sự đáng chú ý.",
+          {
+            star:5,
+            name: "Le Van B",
+            feel: "Việc tìm kiếm quần áo phù hợp với phong cách cá nhân của tôi từng là một thử thách cho đến khi tôi khám phá ra 28.SHOP. Hàng loạt lựa chọn mà họ cung cấp thực sự đáng chú ý.",
 
         },
-         {
-          star: 5,
-          name: "Le Van C",
-          feel: "Là một người luôn tìm kiếm những món đồ thời trang độc đáo, tôi rất vui khi tình cờ biết đến 28.SHOP. Việc lựa chọn quần áo không chỉ đa dạng mà còn bắt kịp xu hướng mới nhất.",
+          {
+            star: 5,
+            name: "Le Van C",
+            feel: "Là một người luôn tìm kiếm những món đồ thời trang độc đáo, tôi rất vui khi tình cờ biết đến 28.SHOP. Việc lựa chọn quần áo không chỉ đa dạng mà còn bắt kịp xu hướng mới nhất.",
 
         }
       ];
@@ -254,20 +284,20 @@ html
           image: "../assets/images/icon-visa.svg"
         },
 
-         {
-          image: "../assets/images/icon-mastercard.svg"
+          {
+            image: "../assets/images/icon-mastercard.svg"
         },
 
-         {
-          image: "../assets/images/icon-paypal.svg"
+          {
+            image: "../assets/images/icon-paypal.svg"
         },
 
-         {
-          image: "../assets/images/icon-apple-pay.svg"
+          {
+            image: "../assets/images/icon-apple-pay.svg"
         },
 
-         {
-          image: "../assets/images/icon-google-pay.svg"
+          {
+            image: "../assets/images/icon-google-pay.svg"
         },
       ];
 
@@ -357,7 +387,19 @@ html
           p(class="font-[400] text-[14px] text-[#00000099]") 28.SHOP © 2024, All Rights Reserved
           div(class="flex flex-wrap sm:gap-[12px] gap-[10px]")
             each item in payment
-              +paymentSupport(item)
-            
-            
+              +paymentSupport(item)         
     //- End Footer
+
+
+    //- AOS
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+
+
+    //-Swipper
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+
+    //-Viewerjs
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.js")
+
+    //- main.js
+    script(src="assets/js/main.js")

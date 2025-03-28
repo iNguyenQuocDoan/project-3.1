@@ -7,3 +7,15 @@
 input{
     outline: none;
 }
+
+.swiper-button-next , .swiper-button-prev {
+    color: red;
+}
+
+.viewer-button{
+    background-color: red;
+}
+
+.viewer-button:hover{
+    background-color: purple;
+}
